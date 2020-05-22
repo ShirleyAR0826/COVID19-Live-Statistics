@@ -25,10 +25,10 @@ class Graph extends Component {
           }
         },
         data: {
-          labels: this.props.Countries.slice(0,20).map(entry => entry.Country),
+          labels: this.props.Countries.map(entry => entry.Country),
           datasets: [{
-            label: "Country",
-            data: this.props.Countries.slice(0,20).map(entry => entry.NewConfirmed),
+            label: "New Confirmed Cases",
+            data: this.props.Countries.map(entry => entry.NewConfirmed),
             backgroundColor: 'gray'
           }]
         }
