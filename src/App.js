@@ -27,18 +27,19 @@ class App extends Component {
     this.state = {
         summary: {
           "Global": database["Global"],
-          "Countries": database["Countries"]
+          "Countries": database["Countries"],
+          "Date": database["Date"]
         },
         searchfield: '',
         route: 'home'
     }
   }
 
-  /*componentDidMount(){
+  componentDidMount(){
     fetch('https://api.covid19api.com/summary')
         .then(response => response.json())
         .then(data => this.setState({summary: data}));
-  }*/
+  }
 
   onSearchChange = (event) => {
     this.setState({searchfield: event.target.value})
