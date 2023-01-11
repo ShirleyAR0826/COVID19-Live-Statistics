@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "chart.js": "^2.9.3",
     "clarifai": "^2.9.1",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "pg": "^8.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
